@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>消息对话框</title>
+<script type="text/javascript">
+function show_confirm(){
+	var tf=confirm("请选择按钮");
+	if(tf==true)
+	{
+		alert("您按了确定按钮");
+	}
+	else{alert("您按了取消按钮");}
+}
+</script>
+<script type="text/javascript">
+function disp_prompt(){
+	var name=prompt("请输入你的名字","李四");
+	if(name!=null && name!="")
+		{
+		document.write("你好，"+name+"!");
+		}	
+}</script>
+</body>
+</head>
+<body>
+<script type="text/javascript">
+alert("这是警告框");</script>
+<form method="post" action=""><input type="button" onclick="show_confirm()"value="显示确认框"/></form>
+<form method="post" action=""><input type="button" onclick="disp_prompt()"value="显示提示框"/></form>
+</html>
